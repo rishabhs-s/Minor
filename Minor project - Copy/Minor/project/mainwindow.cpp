@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    QPixmap pix("F:/images(minor)/minor_6.jpg");
+    ui->image->setPixmap(pix);
 }
 
 MainWindow::~MainWindow()
@@ -18,7 +20,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_login_clicked()
 {
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("E:/Minor project/Minor/Minor project - Copy/Minor/project/db.sqlite");
+    db.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/db.sqlite");
     QString email=ui ->email->text();
     QString password=ui ->password->text();
 
@@ -50,6 +52,7 @@ void MainWindow::on_login_clicked()
 
 void MainWindow::on_signup_clicked()
 {
+    hide();
     //QMessageBox::information(this,"Sign up","going to signup page");
     signup=new Signup(this);
     signup ->show();
