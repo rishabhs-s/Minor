@@ -223,7 +223,6 @@ Makefile: ../project/MinorNew.pro F:/QT/5.15.0/mingw81_64/mkspecs/win32-g++/qmak
 		F:/QT/5.15.0/mingw81_64/mkspecs/features/qt_config.prf \
 		F:/QT/5.15.0/mingw81_64/mkspecs/win32-g++/qmake.conf \
 		F:/QT/5.15.0/mingw81_64/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		F:/QT/5.15.0/mingw81_64/mkspecs/features/exclusive_builds.prf \
 		F:/QT/5.15.0/mingw81_64/mkspecs/features/toolchain.prf \
 		F:/QT/5.15.0/mingw81_64/mkspecs/features/default_pre.prf \
@@ -253,6 +252,7 @@ Makefile: ../project/MinorNew.pro F:/QT/5.15.0/mingw81_64/mkspecs/win32-g++/qmak
 		F:/QT/5.15.0/mingw81_64/lib/Qt5Sql.prl \
 		F:/QT/5.15.0/mingw81_64/lib/Qt5Core.prl \
 		F:/QT/5.15.0/mingw81_64/lib/qtmain.prl \
+		.qmake.stash \
 		F:/QT/5.15.0/mingw81_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\project\MinorNew.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 F:/QT/5.15.0/mingw81_64/mkspecs/features/spec_pre.prf:
@@ -408,7 +408,6 @@ F:/QT/5.15.0/mingw81_64/mkspecs/features/qt_functions.prf:
 F:/QT/5.15.0/mingw81_64/mkspecs/features/qt_config.prf:
 F:/QT/5.15.0/mingw81_64/mkspecs/win32-g++/qmake.conf:
 F:/QT/5.15.0/mingw81_64/mkspecs/features/spec_post.prf:
-.qmake.stash:
 F:/QT/5.15.0/mingw81_64/mkspecs/features/exclusive_builds.prf:
 F:/QT/5.15.0/mingw81_64/mkspecs/features/toolchain.prf:
 F:/QT/5.15.0/mingw81_64/mkspecs/features/default_pre.prf:
@@ -438,6 +437,7 @@ F:/QT/5.15.0/mingw81_64/lib/Qt5Gui.prl:
 F:/QT/5.15.0/mingw81_64/lib/Qt5Sql.prl:
 F:/QT/5.15.0/mingw81_64/lib/Qt5Core.prl:
 F:/QT/5.15.0/mingw81_64/lib/qtmain.prl:
+.qmake.stash:
 F:/QT/5.15.0/mingw81_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\project\MinorNew.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "dialog.h"
 #include "signup.h"
+#include "medicalform.h"
 #include<QtSql>
 #include<QSqlDatabase>
 #include<QMessageBox>
@@ -37,5 +38,6 @@ private:
     Ui::MainWindow *ui;
     Dialog *dialog ;
     Signup *signup ;
+    MedicalForm *medicalform;
 };
 #endif // MAINWINDOW_H

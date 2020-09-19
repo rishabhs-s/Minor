@@ -12,16 +12,19 @@ SOURCES += \
     dialog.cpp \
     main.cpp \
     mainwindow.cpp \
+    medicalform.cpp \
     signup.cpp
 
 HEADERS += \
     dialog.h \
     mainwindow.h \
+    medicalform.h \
     signup.h
 
 FORMS += \
     dialog.ui \
     mainwindow.ui \
+    medicalform.ui \
     signup.ui
 
 # Default rules for deployment.
