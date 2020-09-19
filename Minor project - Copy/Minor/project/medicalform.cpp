@@ -1,5 +1,6 @@
 #include "medicalform.h"
 #include "ui_medicalform.h"
+#include "signup.h"
 
 MedicalForm::MedicalForm(QWidget *parent) :
     QDialog(parent),
@@ -13,8 +14,8 @@ MedicalForm::~MedicalForm()
     delete ui;
 }
 
-
 void MedicalForm::on_Add_clicked()
+
 {
 
         QSqlDatabase mdb=QSqlDatabase::addDatabase("QSQLITE");
@@ -33,7 +34,8 @@ void MedicalForm::on_Add_clicked()
                    QString allergies=ui->allergies->text();
 
                    query.prepare("INSERT INTO records(height,weight,glucose,bp,pulse,medical_history,allergies)"
-                                 "VALUES(:height,:weight,:glucose,:bp,:pulse,:medical_history,:allergies)");
+                                 "VALUES(:height,:weight,:glucose,:bp,:pulse,:medical_history,:allergies)" );
+                   /* where username ='"+username+"'*/
 
 
                    query.bindValue(":height",height);

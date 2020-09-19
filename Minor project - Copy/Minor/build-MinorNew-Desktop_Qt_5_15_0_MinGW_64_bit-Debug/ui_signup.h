@@ -29,6 +29,8 @@ public:
     QLineEdit *last;
     QLabel *label_3;
     QLineEdit *email;
+    QLabel *label_6;
+    QLineEdit *username;
     QLabel *label_4;
     QLineEdit *password;
     QLabel *label_5;
@@ -39,7 +41,7 @@ public:
     {
         if (Signup->objectName().isEmpty())
             Signup->setObjectName(QString::fromUtf8("Signup"));
-        Signup->resize(725, 598);
+        Signup->resize(879, 740);
         Signup->setAutoFillBackground(true);
         verticalLayout = new QVBoxLayout(Signup);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
@@ -72,6 +74,16 @@ public:
         email->setObjectName(QString::fromUtf8("email"));
 
         verticalLayout->addWidget(email);
+
+        label_6 = new QLabel(Signup);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+
+        verticalLayout->addWidget(label_6);
+
+        username = new QLineEdit(Signup);
+        username->setObjectName(QString::fromUtf8("username"));
+
+        verticalLayout->addWidget(username);
 
         label_4 = new QLabel(Signup);
         label_4->setObjectName(QString::fromUtf8("label_4"));
@@ -112,6 +124,7 @@ public:
         label->setText(QCoreApplication::translate("Signup", "First Name", nullptr));
         label_2->setText(QCoreApplication::translate("Signup", "Last Name", nullptr));
         label_3->setText(QCoreApplication::translate("Signup", "Email", nullptr));
+        label_6->setText(QCoreApplication::translate("Signup", "Username", nullptr));
         label_4->setText(QCoreApplication::translate("Signup", "password", nullptr));
         label_5->setText(QCoreApplication::translate("Signup", "Age", nullptr));
         signupadd->setText(QCoreApplication::translate("Signup", "signup", nullptr));

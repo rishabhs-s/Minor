@@ -28,9 +28,10 @@ void Signup::on_signupadd_clicked()
            QString email=ui->email->text();
            QString password=ui->password->text();
            QString age=ui->age->text();
+           QString username=ui->username->text();
 
-           query.prepare("INSERT INTO records(first,last,email,password,age)"
-                         "VALUES(:first,:last,:email,:password,:age)");
+           query.prepare("INSERT INTO records(first,last,email,password,age,username)"
+                         "VALUES(:first,:last,:email,:password,:age,:username)" );
 
 
            query.bindValue(":first",first);
@@ -38,6 +39,7 @@ void Signup::on_signupadd_clicked()
            query.bindValue(":email",email);
            query.bindValue(":password",password);
            query.bindValue(":age",age);
+           query.bindValue(":username",username);
 
 
            if(query.exec()){
