@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Signup_t {
     QByteArrayData data[3];
-    char stringdata0[26];
+    char stringdata0[29];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,11 +33,11 @@ struct qt_meta_stringdata_Signup_t {
 static const qt_meta_stringdata_Signup_t qt_meta_stringdata_Signup = {
     {
 QT_MOC_LITERAL(0, 0, 6), // "Signup"
-QT_MOC_LITERAL(1, 7, 17), // "on_signup_clicked"
-QT_MOC_LITERAL(2, 25, 0) // ""
+QT_MOC_LITERAL(1, 7, 20), // "on_signupadd_clicked"
+QT_MOC_LITERAL(2, 28, 0) // ""
 
     },
-    "Signup\0on_signup_clicked\0"
+    "Signup\0on_signupadd_clicked\0"
 };
 #undef QT_MOC_LITERAL
 
@@ -69,7 +69,7 @@ void Signup::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         auto *_t = static_cast<Signup *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_signup_clicked(); break;
+        case 0: _t->on_signupadd_clicked(); break;
         default: ;
         }
     }

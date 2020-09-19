@@ -20,7 +20,7 @@ public:
     ~Signup();
 
 private slots:
-    void on_signup_clicked();
+    void on_signupadd_clicked();
 
 private:
     Ui::Signup *ui;

@@ -33,7 +33,7 @@ public:
     QLineEdit *password;
     QLabel *label_5;
     QLineEdit *age;
-    QPushButton *signup;
+    QPushButton *signupadd;
 
     void setupUi(QDialog *Signup)
     {
@@ -95,10 +95,10 @@ public:
 
         verticalLayout->addWidget(age);
 
-        signup = new QPushButton(Signup);
-        signup->setObjectName(QString::fromUtf8("signup"));
+        signupadd = new QPushButton(Signup);
+        signupadd->setObjectName(QString::fromUtf8("signupadd"));
 
-        verticalLayout->addWidget(signup);
+        verticalLayout->addWidget(signupadd);
 
 
         retranslateUi(Signup);
@@ -114,7 +114,7 @@ public:
         label_3->setText(QCoreApplication::translate("Signup", "Email", nullptr));
         label_4->setText(QCoreApplication::translate("Signup", "password", nullptr));
         label_5->setText(QCoreApplication::translate("Signup", "Age", nullptr));
-        signup->setText(QCoreApplication::translate("Signup", "signup", nullptr));
+        signupadd->setText(QCoreApplication::translate("Signup", "signup", nullptr));
     } // retranslateUi
 
 };

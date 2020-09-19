@@ -12,10 +12,10 @@ Signup::~Signup()
     delete ui;
 }
 
-void Signup::on_signup_clicked()
+void Signup::on_signupadd_clicked()
 {
        QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
-       db.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/db.sqlite");
+       db.setDatabaseName("E:/Minor project/Minor/Minor project - Copy/Minor/project/db.sqlite");
        if(db.open())
        {
            QSqlQuery query;

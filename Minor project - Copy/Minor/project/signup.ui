@@ -75,7 +75,7 @@
     <widget class="QLineEdit" name="age"/>
    </item>
    <item>
-    <widget class="QPushButton" name="signup">
+    <widget class="QPushButton" name="signupadd">
      <property name="text">
       <string>signup</string>
      </property>
