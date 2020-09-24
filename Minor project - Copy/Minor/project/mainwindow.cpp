@@ -21,6 +21,7 @@ void MainWindow::on_login_clicked()
 {
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+   // db.setDatabaseName("E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
     QString email=ui ->email->text();
     QString password=ui ->password->text();
 
@@ -30,19 +31,27 @@ void MainWindow::on_login_clicked()
 
 
     QSqlQuery qry;
-        if(qry.exec("select * from login where email ='"+email+"' and password ='"+password+"'"))
+        if(qry.exec("select * from records where email ='"+email+"' and password ='"+password+"'"))
         {
                    int count=0;
                    while(qry.next())
                 {
                     count++;
+
                 }
                     if(count==1)
+                    {
                     ui -> label_5 -> setText("username and password is correct");
+                    dashboard =new Dashboard(this);
+                    dashboard->show();
+
                     if(count>1)
                     ui -> label_5 -> setText("Duplicate username and password");
                     if(count<1)
                     ui -> label_5 -> setText("username and password is incorrect");
+                    }
+
+
 
         }
 

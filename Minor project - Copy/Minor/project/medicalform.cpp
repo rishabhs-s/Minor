@@ -51,7 +51,7 @@ void MedicalForm::on_Add_clicked()
                                   QMessageBox::information(this,"Successfull","Data inserted successfully");
                               }
                               else{
-                                   QMessageBox::warning(this,"Unsuccessfull","Data not inserted");
+                                   QMessageBox::warning(this,"Unsuccessfull","query.lasterror()");
                               }
 
                }

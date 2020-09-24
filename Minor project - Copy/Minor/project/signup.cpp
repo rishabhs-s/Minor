@@ -23,6 +23,7 @@ void Signup::on_signupadd_clicked()
            QSqlQuery query;
 
 
+
            QString first=ui->first->text();
            QString last=ui->last->text();
            QString email=ui->email->text();
@@ -51,6 +52,7 @@ void Signup::on_signupadd_clicked()
            else{
                 QMessageBox::warning(this,"Unsuccessfull","Data not inserted");
            }
+
 
 
 

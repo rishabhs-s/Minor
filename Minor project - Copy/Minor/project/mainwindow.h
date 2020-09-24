@@ -12,7 +12,7 @@
 #include<QSqlDriver>
 #include<qsqldriver.h>
 #include<qsqldriverplugin.h>
-
+#include "dashboard.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -39,5 +39,6 @@ private:
     Dialog *dialog ;
     Signup *signup ;
     MedicalForm *medicalform;
+    Dashboard *dashboard;
 };
 #endif // MAINWINDOW_H

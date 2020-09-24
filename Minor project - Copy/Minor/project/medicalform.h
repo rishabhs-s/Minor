@@ -4,6 +4,7 @@
 #include<QSqlDatabase>
 #include<QMessageBox>
 #include <QSqlError>
+//#include "signup.h"
 
 #include <QDialog>
 
@@ -21,6 +22,7 @@ public:
 
 private slots:
     void on_Add_clicked();
+
 
 private:
     Ui::MedicalForm *ui;
