@@ -14,21 +14,27 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     medicalform.cpp \
-    signup.cpp
+    retrieve.cpp \
+    signup.cpp \
+    update.cpp
 
 HEADERS += \
     dashboard.h \
     dialog.h \
     mainwindow.h \
     medicalform.h \
-    signup.h
+    retrieve.h \
+    signup.h \
+    update.h
 
 FORMS += \
     dashboard.ui \
     dialog.ui \
     mainwindow.ui \
     medicalform.ui \
-    signup.ui
+    retrieve.ui \
+    signup.ui \
+    update.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

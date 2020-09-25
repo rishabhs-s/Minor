@@ -3,9 +3,13 @@ debug/dialog.o
 debug/main.o
 debug/mainwindow.o
 debug/medicalform.o
+debug/retrieve.o
 debug/signup.o
+debug/update.o
 debug/moc_dashboard.o
 debug/moc_dialog.o
 debug/moc_mainwindow.o
 debug/moc_medicalform.o
+debug/moc_retrieve.o
 debug/moc_signup.o
+debug/moc_update.o
