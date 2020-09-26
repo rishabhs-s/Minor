@@ -21,7 +21,6 @@ void MainWindow::on_login_clicked()
 {
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
-   // db.setDatabaseName("E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
     QString email=ui ->email->text();
     QString password=ui ->password->text();
 

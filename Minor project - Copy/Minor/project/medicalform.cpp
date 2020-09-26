@@ -1,6 +1,7 @@
 #include "medicalform.h"
 #include "ui_medicalform.h"
 #include "signup.h"
+#include <QSqlError>
 
 MedicalForm::MedicalForm(QWidget *parent) :
     QDialog(parent),
@@ -32,10 +33,21 @@ void MedicalForm::on_Add_clicked()
                    QString pulse=ui->pulse->text();
                    QString medical_history=ui->medical_history->text();
                    QString allergies=ui->allergies->text();
+                   QString un;
+                   query.exec("SELECT username FROM records ORDER BY uid DESC  LIMIT 1 ");
+                   while (query.next()) {
+                          un = query.value(0).toString();
 
-                   query.prepare("INSERT INTO records(height,weight,glucose,bp,pulse,medical_history,allergies)"
-                                 "VALUES(:height,:weight,:glucose,:bp,:pulse,:medical_history,:allergies)" );
-                   /* where username ='"+username+"'*/
+
+
+
+                   }
+                   qDebug()<<un;
+                   query.prepare("update records set height=:height,weight=:weight,glucose=:glucose,bp=:bp,pulse=:pulse,medical_history=:medical_history,allergies=:allergies where username='"+un+"'");
+
+
+
+
 
 
                    query.bindValue(":height",height);
@@ -51,7 +63,9 @@ void MedicalForm::on_Add_clicked()
                                   QMessageBox::information(this,"Successfull","Data inserted successfully");
                               }
                               else{
-                                   QMessageBox::warning(this,"Unsuccessfull","query.lasterror()");
+                                   //QMessageBox::warning(this,"Unsuccessfull",mdb.lastError());
+                       QMessageBox::critical(0,"Database Error",mdb.lastError().text());
+                       qDebug()<<mdb.lastError().text();
                               }
 
                }
