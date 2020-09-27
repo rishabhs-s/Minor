@@ -3,11 +3,15 @@ release/dialog.o
 release/main.o
 release/mainwindow.o
 release/medicalform.o
+release/retrieve.o
 release/signup.o
-release/symptoms.o
+release/symptom.o
+release/update.o
 release/moc_dashboard.o
 release/moc_dialog.o
 release/moc_mainwindow.o
 release/moc_medicalform.o
+release/moc_retrieve.o
 release/moc_signup.o
-release/moc_symptoms.o
+release/moc_symptom.o
+release/moc_update.o

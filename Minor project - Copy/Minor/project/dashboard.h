@@ -2,6 +2,7 @@
 #define DASHBOARD_H
 #include "update.h"
 #include "retrieve.h"
+#include "symptom.h"
 
 #include <QDialog>
 
@@ -22,10 +23,13 @@ private slots:
 
     void on_view_clicked();
 
+    void on_symptom_clicked();
+
 private:
     Ui::Dashboard *ui;
     Update *updaterec;
     Retrieve *retrieverec;
+    Symptom *symptom;
 };
 
 #endif // DASHBOARD_H

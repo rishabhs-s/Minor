@@ -16,6 +16,7 @@ SOURCES += \
     medicalform.cpp \
     retrieve.cpp \
     signup.cpp \
+    symptom.cpp \
     update.cpp
 
 HEADERS += \
@@ -25,6 +26,7 @@ HEADERS += \
     medicalform.h \
     retrieve.h \
     signup.h \
+    symptom.h \
     update.h
 
 FORMS += \
@@ -34,6 +36,7 @@ FORMS += \
     medicalform.ui \
     retrieve.ui \
     signup.ui \
+    symptom.ui \
     update.ui
 
 # Default rules for deployment.

@@ -25,3 +25,9 @@ void Dashboard::on_view_clicked()
     retrieverec->show();
 }
 
+
+void Dashboard::on_symptom_clicked()
+{
+    symptom= new Symptom (this);
+    symptom->show();
+}
