@@ -50,7 +50,7 @@ public:
         groupBox->setGeometry(QRect(140, 60, 861, 511));
         Retrieverec = new QPushButton(groupBox);
         Retrieverec->setObjectName(QString::fromUtf8("Retrieverec"));
-        Retrieverec->setGeometry(QRect(390, 460, 93, 28));
+        Retrieverec->setGeometry(QRect(390, 470, 93, 28));
         label = new QLabel(groupBox);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(160, 60, 55, 16));

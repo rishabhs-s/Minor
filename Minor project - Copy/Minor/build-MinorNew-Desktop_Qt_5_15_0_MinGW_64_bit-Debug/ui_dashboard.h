@@ -41,7 +41,7 @@ public:
         textBrowser->setGeometry(QRect(40, 90, 541, 611));
         verticalLayoutWidget = new QWidget(Dashboard);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(820, 20, 241, 621));
+        verticalLayoutWidget->setGeometry(QRect(820, 70, 241, 621));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);

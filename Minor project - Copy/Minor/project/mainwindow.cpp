@@ -60,7 +60,7 @@ void MainWindow::on_login_clicked()
 
 void MainWindow::on_signup_clicked()
 {
-    hide();
+    //hide();
     //QMessageBox::information(this,"Sign up","going to signup page");
     signup=new Signup(this);
     signup ->show();

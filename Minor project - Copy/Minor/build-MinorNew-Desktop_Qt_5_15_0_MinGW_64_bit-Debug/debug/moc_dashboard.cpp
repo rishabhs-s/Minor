@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../project/dashboard.h"
+#include "../../../../../../symptom minor/dashboard.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_Dashboard_t {
     QByteArrayData data[4];
-    char stringdata0[45];
+    char stringdata0[46];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,12 +33,12 @@ struct qt_meta_stringdata_Dashboard_t {
 static const qt_meta_stringdata_Dashboard_t qt_meta_stringdata_Dashboard = {
     {
 QT_MOC_LITERAL(0, 0, 9), // "Dashboard"
-QT_MOC_LITERAL(1, 10, 17), // "on_update_clicked"
-QT_MOC_LITERAL(2, 28, 0), // ""
-QT_MOC_LITERAL(3, 29, 15) // "on_view_clicked"
+QT_MOC_LITERAL(1, 10, 18), // "on_symptom_clicked"
+QT_MOC_LITERAL(2, 29, 0), // ""
+QT_MOC_LITERAL(3, 30, 15) // "on_view_clicked"
 
     },
-    "Dashboard\0on_update_clicked\0\0"
+    "Dashboard\0on_symptom_clicked\0\0"
     "on_view_clicked"
 };
 #undef QT_MOC_LITERAL
@@ -73,7 +73,7 @@ void Dashboard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         auto *_t = static_cast<Dashboard *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_update_clicked(); break;
+        case 0: _t->on_symptom_clicked(); break;
         case 1: _t->on_view_clicked(); break;
         default: ;
         }
