@@ -14,7 +14,6 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
@@ -29,16 +28,16 @@ public:
     QLabel *label_3;
     QLabel *label_4;
     QLabel *label_5;
-    QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
-    QLineEdit *lineEdit_3;
-    QLineEdit *lineEdit_4;
-    QLineEdit *lineEdit_5;
     QGroupBox *groupBox_2;
-    QLineEdit *lineEdit_6;
     QLabel *label_6;
     QLabel *label_7;
-    QLineEdit *lineEdit_7;
+    QLabel *medical;
+    QLabel *allergies;
+    QLabel *height;
+    QLabel *weight;
+    QLabel *glucose;
+    QLabel *bp;
+    QLabel *pulse;
 
     void setupUi(QDialog *Retrieve)
     {
@@ -47,7 +46,7 @@ public:
         Retrieve->resize(1175, 717);
         groupBox = new QGroupBox(Retrieve);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(140, 60, 861, 511));
+        groupBox->setGeometry(QRect(100, 40, 861, 511));
         Retrieverec = new QPushButton(groupBox);
         Retrieverec->setObjectName(QString::fromUtf8("Retrieverec"));
         Retrieverec->setGeometry(QRect(390, 470, 93, 28));
@@ -66,36 +65,36 @@ public:
         label_5 = new QLabel(groupBox);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setGeometry(QRect(150, 250, 81, 16));
-        lineEdit = new QLineEdit(groupBox);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(320, 60, 113, 22));
-        lineEdit_2 = new QLineEdit(groupBox);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-        lineEdit_2->setGeometry(QRect(320, 110, 113, 22));
-        lineEdit_3 = new QLineEdit(groupBox);
-        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
-        lineEdit_3->setGeometry(QRect(320, 150, 113, 22));
-        lineEdit_4 = new QLineEdit(groupBox);
-        lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
-        lineEdit_4->setGeometry(QRect(320, 200, 113, 22));
-        lineEdit_5 = new QLineEdit(groupBox);
-        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
-        lineEdit_5->setGeometry(QRect(320, 250, 113, 22));
         groupBox_2 = new QGroupBox(groupBox);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         groupBox_2->setGeometry(QRect(10, 280, 861, 181));
-        lineEdit_6 = new QLineEdit(groupBox_2);
-        lineEdit_6->setObjectName(QString::fromUtf8("lineEdit_6"));
-        lineEdit_6->setGeometry(QRect(120, 10, 251, 161));
         label_6 = new QLabel(groupBox_2);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setGeometry(QRect(10, 60, 91, 21));
         label_7 = new QLabel(groupBox_2);
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setGeometry(QRect(510, 70, 71, 21));
-        lineEdit_7 = new QLineEdit(groupBox_2);
-        lineEdit_7->setObjectName(QString::fromUtf8("lineEdit_7"));
-        lineEdit_7->setGeometry(QRect(570, 10, 271, 161));
+        medical = new QLabel(groupBox_2);
+        medical->setObjectName(QString::fromUtf8("medical"));
+        medical->setGeometry(QRect(160, 10, 231, 151));
+        allergies = new QLabel(groupBox_2);
+        allergies->setObjectName(QString::fromUtf8("allergies"));
+        allergies->setGeometry(QRect(590, 10, 231, 151));
+        height = new QLabel(groupBox);
+        height->setObjectName(QString::fromUtf8("height"));
+        height->setGeometry(QRect(320, 50, 111, 31));
+        weight = new QLabel(groupBox);
+        weight->setObjectName(QString::fromUtf8("weight"));
+        weight->setGeometry(QRect(310, 100, 111, 31));
+        glucose = new QLabel(groupBox);
+        glucose->setObjectName(QString::fromUtf8("glucose"));
+        glucose->setGeometry(QRect(320, 150, 111, 31));
+        bp = new QLabel(groupBox);
+        bp->setObjectName(QString::fromUtf8("bp"));
+        bp->setGeometry(QRect(320, 190, 111, 31));
+        pulse = new QLabel(groupBox);
+        pulse->setObjectName(QString::fromUtf8("pulse"));
+        pulse->setGeometry(QRect(310, 230, 111, 31));
 
         retranslateUi(Retrieve);
 
@@ -115,6 +114,13 @@ public:
         groupBox_2->setTitle(QString());
         label_6->setText(QCoreApplication::translate("Retrieve", "Medical History", nullptr));
         label_7->setText(QCoreApplication::translate("Retrieve", "Allergies", nullptr));
+        medical->setText(QCoreApplication::translate("Retrieve", "6", nullptr));
+        allergies->setText(QCoreApplication::translate("Retrieve", "7", nullptr));
+        height->setText(QCoreApplication::translate("Retrieve", "1", nullptr));
+        weight->setText(QCoreApplication::translate("Retrieve", "2", nullptr));
+        glucose->setText(QCoreApplication::translate("Retrieve", "3", nullptr));
+        bp->setText(QCoreApplication::translate("Retrieve", "4", nullptr));
+        pulse->setText(QCoreApplication::translate("Retrieve", "5", nullptr));
     } // retranslateUi
 
 };

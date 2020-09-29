@@ -1,5 +1,9 @@
 #ifndef RETRIEVE_H
 #define RETRIEVE_H
+#include<QtSql>
+#include<QSqlDatabase>
+#include<QMessageBox>
+#include <QSqlError>
 
 #include <QDialog>
 
@@ -14,6 +18,9 @@ class Retrieve : public QDialog
 public:
     explicit Retrieve(QWidget *parent = nullptr);
     ~Retrieve();
+
+private slots:
+    void on_Retrieverec_clicked();
 
 private:
     Ui::Retrieve *ui;

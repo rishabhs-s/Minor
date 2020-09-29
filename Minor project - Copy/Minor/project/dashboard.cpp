@@ -1,5 +1,6 @@
 #include "dashboard.h"
 #include "ui_dashboard.h"
+#include "ui_retrieve.h"
 
 Dashboard::Dashboard(QWidget *parent) :
     QDialog(parent),
@@ -21,6 +22,7 @@ void Dashboard::on_update_clicked()
 
 void Dashboard::on_view_clicked()
 {
+
     retrieverec =new Retrieve(this);
     retrieverec->show();
 }

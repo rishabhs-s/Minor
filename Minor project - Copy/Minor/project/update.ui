@@ -103,17 +103,7 @@
      <string>Pulse rate</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>60</y>
-      <width>113</width>
-      <height>22</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="weight">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -123,7 +113,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="glucose">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -133,7 +123,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="bp">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -143,7 +133,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_5">
+   <widget class="QLineEdit" name="pulse">
     <property name="geometry">
      <rect>
       <x>320</x>
@@ -165,7 +155,7 @@
     <property name="title">
      <string/>
     </property>
-    <widget class="QLineEdit" name="lineEdit_6">
+    <widget class="QLineEdit" name="medical_history">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -201,7 +191,7 @@
       <string>Allergies</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_7">
+    <widget class="QLineEdit" name="allergies">
      <property name="geometry">
       <rect>
        <x>570</x>
@@ -211,6 +201,29 @@
       </rect>
      </property>
     </widget>
+   </widget>
+   <widget class="QPushButton" name="show">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>460</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>show</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="height">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>60</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
    </widget>
   </widget>
  </widget>
