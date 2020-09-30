@@ -17,7 +17,7 @@ Signup::~Signup()
 void Signup::on_signupadd_clicked()
 {
        QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
-       db.setDatabaseName("E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+       db.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
        if(db.open())
        {
            QSqlQuery query;

@@ -20,7 +20,7 @@ public:
     ~Update();
 
 private slots:
-    void on_pushButton_clicked();
+    //void on_pushButton_clicked();
 
     void on_Updaterec_clicked();
 

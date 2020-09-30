@@ -4,6 +4,7 @@
 #include "retrieve.h"
 #include "symptom.h"
 
+
 #include <QDialog>
 
 namespace Ui {
@@ -27,6 +28,7 @@ private slots:
 
 private:
     Ui::Dashboard *ui;
+
     Update *updaterec;
     Retrieve *retrieverec;
     Symptom *symptom;
