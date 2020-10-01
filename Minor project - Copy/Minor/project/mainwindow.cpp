@@ -54,7 +54,7 @@ void MainWindow::on_login_clicked()
                     if(count<1)
 
                     {//ui -> label_5 -> setText("username and password is incorrect");
-                    QMessageBox::information(this,"Login failed","Not a registered Email address.Register by clicking onto signup first.");}
+                    QMessageBox::information(this,"Login failed","Not a registered Email address.Register by clicking onto signup first.");} //login message failed message prints.
 
          }
   }
