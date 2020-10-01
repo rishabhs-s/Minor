@@ -44,20 +44,20 @@ void MainWindow::on_login_clicked()
                     ui -> label_5 -> setText("username and password is correct");
                     dashboard =new Dashboard(this);
                     dashboard->show();
-
-                    if(count>1)
-                    ui -> label_5 -> setText("Duplicate username and password");
-                    if(count<1)
-                    ui -> label_5 -> setText("username and password is incorrect");
                     }
 
+//                    if(count>1)
+//                    {
+//                    ui -> label_5 -> setText("Duplicate username and password");
+//                    }
 
+                    if(count<1)
 
-        }
+                    {//ui -> label_5 -> setText("username and password is incorrect");
+                    QMessageBox::information(this,"Login failed","Not a registered Email address.Register by clicking onto signup first.");}
 
-}
-
-
+         }
+  }
 
 void MainWindow::on_signup_clicked()
 {

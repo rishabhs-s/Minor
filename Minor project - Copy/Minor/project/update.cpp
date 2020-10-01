@@ -41,7 +41,7 @@ void Update::on_show_clicked()
                        allergies= query.value(12).toString();
                }
 
-               ui->height->setText(height);
+              // ui->height->setText(height);
                ui->weight->setText(weight);
                ui->glucose->setText(glucose);
                ui->bp->setText(bp);
@@ -49,7 +49,7 @@ void Update::on_show_clicked()
                ui->medical_history->setText(medical_history);
                ui->allergies->setText(allergies);
 
-//               ui->height->setPlaceholderText(height);
+              ui->height->setPlaceholderText(height);
 //               ui->weight->setPlaceholderText(weight);
 //               ui->glucose->setPlaceholderText(glucose);
 //               ui->bp->setPlaceholderText(bp);
@@ -94,10 +94,9 @@ void Update::on_Updaterec_clicked()
                           allergies=ui->allergies->text();
 
 
-
-//                       height=ui->height->placeholderText();       //changes been not done
-//                        height=ui->height->text();
-//                        ui->height->setText(height);
+                       height=ui->height->placeholderText();       //changes been not done
+                       height=ui->height->text();
+                       ui->height->setText(height);
 
 //                        weight=ui->weight->placeholderText();
 //                         qDebug()<<"weight PH"<<weight;
