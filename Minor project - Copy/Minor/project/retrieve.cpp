@@ -15,7 +15,7 @@ Retrieve::~Retrieve()
 
 void Retrieve::on_Retrieverec_clicked()
 {
-    QString username ="rishabh0512";
+    QString username=ui->username->text();
     QString height ;
     QString weight ;
     QString glucose;

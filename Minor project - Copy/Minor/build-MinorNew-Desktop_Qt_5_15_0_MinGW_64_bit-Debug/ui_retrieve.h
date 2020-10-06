@@ -14,6 +14,7 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
@@ -38,6 +39,8 @@ public:
     QLabel *glucose;
     QLabel *bp;
     QLabel *pulse;
+    QLabel *label_8;
+    QLineEdit *username;
 
     void setupUi(QDialog *Retrieve)
     {
@@ -95,6 +98,12 @@ public:
         pulse = new QLabel(groupBox);
         pulse->setObjectName(QString::fromUtf8("pulse"));
         pulse->setGeometry(QRect(310, 230, 111, 31));
+        label_8 = new QLabel(groupBox);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setGeometry(QRect(150, 20, 81, 20));
+        username = new QLineEdit(groupBox);
+        username->setObjectName(QString::fromUtf8("username"));
+        username->setGeometry(QRect(280, 20, 113, 22));
 
         retranslateUi(Retrieve);
 
@@ -121,6 +130,8 @@ public:
         glucose->setText(QCoreApplication::translate("Retrieve", "3", nullptr));
         bp->setText(QCoreApplication::translate("Retrieve", "4", nullptr));
         pulse->setText(QCoreApplication::translate("Retrieve", "5", nullptr));
+        label_8->setText(QCoreApplication::translate("Retrieve", "username", nullptr));
+        username->setPlaceholderText(QCoreApplication::translate("Retrieve", "enter username", nullptr));
     } // retranslateUi
 
 };

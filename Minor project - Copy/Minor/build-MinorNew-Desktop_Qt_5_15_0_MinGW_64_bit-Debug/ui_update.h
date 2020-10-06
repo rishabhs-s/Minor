@@ -40,6 +40,8 @@ public:
     QLineEdit *allergies;
     QPushButton *show;
     QLineEdit *height;
+    QLineEdit *username;
+    QLabel *label_8;
 
     void setupUi(QDialog *Update)
     {
@@ -48,7 +50,7 @@ public:
         Update->resize(1142, 749);
         groupBox = new QGroupBox(Update);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(110, 80, 861, 511));
+        groupBox->setGeometry(QRect(140, 80, 861, 511));
         Updaterec = new QPushButton(groupBox);
         Updaterec->setObjectName(QString::fromUtf8("Updaterec"));
         Updaterec->setGeometry(QRect(390, 460, 93, 28));
@@ -99,7 +101,13 @@ public:
         show->setGeometry(QRect(260, 460, 93, 28));
         height = new QLineEdit(groupBox);
         height->setObjectName(QString::fromUtf8("height"));
-        height->setGeometry(QRect(310, 60, 113, 22));
+        height->setGeometry(QRect(320, 60, 113, 22));
+        username = new QLineEdit(groupBox);
+        username->setObjectName(QString::fromUtf8("username"));
+        username->setGeometry(QRect(320, 10, 113, 22));
+        label_8 = new QLabel(groupBox);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setGeometry(QRect(150, 10, 71, 21));
 
         retranslateUi(Update);
 
@@ -120,6 +128,7 @@ public:
         label_6->setText(QCoreApplication::translate("Update", "Medical History", nullptr));
         label_7->setText(QCoreApplication::translate("Update", "Allergies", nullptr));
         show->setText(QCoreApplication::translate("Update", "show", nullptr));
+        label_8->setText(QCoreApplication::translate("Update", "username", nullptr));
     } // retranslateUi
 
 };

@@ -15,7 +15,7 @@ Update::~Update()
 
 void Update::on_show_clicked()
 {
-   QString username ="abc";
+    QString username=ui->username->text();
     QString height ;
     QString weight ;
     QString glucose;

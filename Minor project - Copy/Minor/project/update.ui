@@ -16,7 +16,7 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>140</x>
      <y>80</y>
      <width>861</width>
      <height>511</height>
@@ -218,11 +218,34 @@
    <widget class="QLineEdit" name="height">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>320</x>
       <y>60</y>
       <width>113</width>
       <height>22</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="username">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>username</string>
     </property>
    </widget>
   </widget>
