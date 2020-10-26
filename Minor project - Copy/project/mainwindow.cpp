@@ -7,8 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-  //  QPixmap pix("F:/Minor/Minor project - Copy/Minor/project/minor_6.jpg");
-    QPixmap pix( "E:/Minor project/Minor/Minor project - Copy/Minor/project/minor_6.jpg");
+  QPixmap pix("F:/Minor/Minor project - Copy/Minor/project/minor_6.jpg");
+    //QPixmap pix( "E:/Minor project/Minor/Minor project - Copy/Minor/project/minor_6.jpg");
     ui->image->setPixmap(pix);
 }
 
@@ -21,9 +21,9 @@ MainWindow::~MainWindow()
 void MainWindow::on_login_clicked()
 {
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
-   // db.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+    db.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
     //"F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite"
-    db.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+    //db.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
     QString email=ui ->email->text();
     QString password=ui ->password->text();
 
@@ -43,7 +43,7 @@ void MainWindow::on_login_clicked()
                 }
                     if(count==1)
                     {
-                    ui -> label_5 -> setText("username and password is correct");
+                    //ui -> label_5 -> setText("username and password is correct");
                     dashboard =new Dashboard(this);
                     dashboard->show();
                     }

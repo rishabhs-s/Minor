@@ -20,8 +20,8 @@ void MedicalForm::on_Add_clicked()
 {
 
         QSqlDatabase mdb=QSqlDatabase::addDatabase("QSQLITE");
-               //mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
-        mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+               mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+        //mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
                if(mdb.open())
                {
                    QSqlQuery query;

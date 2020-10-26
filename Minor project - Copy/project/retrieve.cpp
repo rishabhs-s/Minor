@@ -25,8 +25,8 @@ void Retrieve::on_Retrieverec_clicked()
     QString allergies;
 
     QSqlDatabase mdb=QSqlDatabase::addDatabase("QSQLITE");
-        //   mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
-    mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+     mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+    //mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
            if(mdb.open())
            {
                QSqlQuery query;
@@ -54,4 +54,9 @@ void Retrieve::on_Retrieverec_clicked()
 
 
 }
+}
+
+void Retrieve::on_okay_clicked()
+{
+    hide();
 }

@@ -120,14 +120,14 @@ public:
 
     void retranslateUi(QDialog *Signup)
     {
-        Signup->setWindowTitle(QCoreApplication::translate("Signup", "Dialog", nullptr));
+        Signup->setWindowTitle(QCoreApplication::translate("Signup", "Sign Up", nullptr));
         label->setText(QCoreApplication::translate("Signup", "First Name", nullptr));
         label_2->setText(QCoreApplication::translate("Signup", "Last Name", nullptr));
         label_3->setText(QCoreApplication::translate("Signup", "Email", nullptr));
         label_6->setText(QCoreApplication::translate("Signup", "Username", nullptr));
         label_4->setText(QCoreApplication::translate("Signup", "password", nullptr));
         label_5->setText(QCoreApplication::translate("Signup", "Age", nullptr));
-        signupadd->setText(QCoreApplication::translate("Signup", "signup", nullptr));
+        signupadd->setText(QCoreApplication::translate("Signup", "signup  to add medical info.", nullptr));
     } // retranslateUi
 
 };
