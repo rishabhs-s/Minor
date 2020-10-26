@@ -22,6 +22,8 @@ public:
 private slots:
     void on_Retrieverec_clicked();
 
+    void on_okay_clicked();
+
 private:
     Ui::Retrieve *ui;
 };

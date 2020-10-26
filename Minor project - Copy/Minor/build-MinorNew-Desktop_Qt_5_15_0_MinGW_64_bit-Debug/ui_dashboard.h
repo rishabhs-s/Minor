@@ -34,11 +34,11 @@ public:
     {
         if (Dashboard->objectName().isEmpty())
             Dashboard->setObjectName(QString::fromUtf8("Dashboard"));
-        Dashboard->resize(1249, 750);
+        Dashboard->resize(1250, 750);
         Dashboard->setBaseSize(QSize(0, 0));
         textBrowser = new QTextBrowser(Dashboard);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        textBrowser->setGeometry(QRect(40, 90, 541, 611));
+        textBrowser->setGeometry(QRect(140, 100, 541, 611));
         verticalLayoutWidget = new QWidget(Dashboard);
         verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
         verticalLayoutWidget->setGeometry(QRect(820, 70, 241, 621));
@@ -73,7 +73,7 @@ public:
 
     void retranslateUi(QDialog *Dashboard)
     {
-        Dashboard->setWindowTitle(QCoreApplication::translate("Dashboard", "Dialog", nullptr));
+        Dashboard->setWindowTitle(QCoreApplication::translate("Dashboard", "Dashboard", nullptr));
         textBrowser->setHtml(QCoreApplication::translate("Dashboard", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

@@ -1,5 +1,7 @@
 #ifndef SYMPTOM_H
 #define SYMPTOM_H
+#include<chatdialog.h>
+
 
 #include <QDialog>
 
@@ -20,6 +22,8 @@ private slots:
 
 private:
     Ui::Symptom *ui;
+   ChatDialog *dialog1;
+
 };
 
 #endif // SYMPTOM_H

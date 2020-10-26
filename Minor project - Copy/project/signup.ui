@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Sign Up</string>
   </property>
   <property name="autoFillBackground">
    <bool>true</bool>
@@ -87,7 +87,7 @@
    <item>
     <widget class="QPushButton" name="signupadd">
      <property name="text">
-      <string>signup</string>
+      <string>signup  to add medical info.</string>
      </property>
     </widget>
    </item>

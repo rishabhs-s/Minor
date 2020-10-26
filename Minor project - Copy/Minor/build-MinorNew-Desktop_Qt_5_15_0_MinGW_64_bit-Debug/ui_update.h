@@ -50,7 +50,7 @@ public:
         Update->resize(1142, 749);
         groupBox = new QGroupBox(Update);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(140, 80, 861, 511));
+        groupBox->setGeometry(QRect(130, 80, 861, 511));
         Updaterec = new QPushButton(groupBox);
         Updaterec->setObjectName(QString::fromUtf8("Updaterec"));
         Updaterec->setGeometry(QRect(390, 460, 93, 28));
@@ -98,7 +98,7 @@ public:
         allergies->setGeometry(QRect(570, 10, 271, 161));
         show = new QPushButton(groupBox);
         show->setObjectName(QString::fromUtf8("show"));
-        show->setGeometry(QRect(260, 460, 93, 28));
+        show->setGeometry(QRect(450, 10, 93, 28));
         height = new QLineEdit(groupBox);
         height->setObjectName(QString::fromUtf8("height"));
         height->setGeometry(QRect(320, 60, 113, 22));

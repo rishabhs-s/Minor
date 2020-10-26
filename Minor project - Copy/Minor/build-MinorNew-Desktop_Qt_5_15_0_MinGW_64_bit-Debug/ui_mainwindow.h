@@ -17,10 +17,10 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -32,29 +32,27 @@ public:
     QWidget *centralwidget;
     QFrame *frame_3;
     QLabel *image;
-    QLabel *label_3;
+    QTextBrowser *textBrowser;
     QFrame *frame_4;
     QGroupBox *groupBox;
     QLabel *label_4;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_2;
     QLabel *label;
     QLabel *label_2;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout;
     QLineEdit *email;
     QLineEdit *password;
-    QWidget *widget2;
+    QWidget *layoutWidget2;
     QVBoxLayout *verticalLayout_3;
     QPushButton *login;
     QSpacerItem *verticalSpacer_2;
     QPushButton *signup;
-    QLabel *label_5;
-    QWidget *widget3;
+    QWidget *layoutWidget3;
     QHBoxLayout *horizontalLayout;
     QFrame *frame;
     QFrame *frame_2;
-    QMenuBar *menubar;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -66,23 +64,23 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         frame_3 = new QFrame(centralwidget);
         frame_3->setObjectName(QString::fromUtf8("frame_3"));
-        frame_3->setGeometry(QRect(20, 19, 401, 531));
+        frame_3->setGeometry(QRect(10, 20, 401, 531));
         frame_3->setFrameShape(QFrame::StyledPanel);
         frame_3->setFrameShadow(QFrame::Raised);
         image = new QLabel(frame_3);
         image->setObjectName(QString::fromUtf8("image"));
-        image->setGeometry(QRect(40, 50, 321, 251));
-        label_3 = new QLabel(frame_3);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(10, 330, 351, 51));
+        image->setGeometry(QRect(40, 140, 341, 251));
+        textBrowser = new QTextBrowser(frame_3);
+        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        textBrowser->setGeometry(QRect(50, 50, 301, 91));
         frame_4 = new QFrame(centralwidget);
         frame_4->setObjectName(QString::fromUtf8("frame_4"));
-        frame_4->setGeometry(QRect(440, 30, 341, 511));
+        frame_4->setGeometry(QRect(430, 30, 341, 511));
         frame_4->setFrameShape(QFrame::StyledPanel);
         frame_4->setFrameShadow(QFrame::Raised);
         groupBox = new QGroupBox(frame_4);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(20, 30, 301, 241));
+        groupBox->setGeometry(QRect(20, 100, 301, 241));
         QPalette palette;
         QBrush brush(QColor(255, 255, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -98,45 +96,46 @@ public:
         label_4 = new QLabel(groupBox);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(30, 150, 61, 16));
-        widget = new QWidget(groupBox);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(30, 30, 57, 51));
-        verticalLayout_2 = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(groupBox);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(30, 30, 57, 51));
+        verticalLayout_2 = new QVBoxLayout(layoutWidget);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
 
         verticalLayout_2->addWidget(label);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         verticalLayout_2->addWidget(label_2);
 
-        widget1 = new QWidget(groupBox);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(100, 30, 139, 53));
-        verticalLayout = new QVBoxLayout(widget1);
+        layoutWidget1 = new QWidget(groupBox);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(100, 30, 139, 53));
+        verticalLayout = new QVBoxLayout(layoutWidget1);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        email = new QLineEdit(widget1);
+        email = new QLineEdit(layoutWidget1);
         email->setObjectName(QString::fromUtf8("email"));
 
         verticalLayout->addWidget(email);
 
-        password = new QLineEdit(widget1);
+        password = new QLineEdit(layoutWidget1);
         password->setObjectName(QString::fromUtf8("password"));
+        password->setEchoMode(QLineEdit::Password);
 
         verticalLayout->addWidget(password);
 
-        widget2 = new QWidget(groupBox);
-        widget2->setObjectName(QString::fromUtf8("widget2"));
-        widget2->setGeometry(QRect(150, 90, 95, 101));
-        verticalLayout_3 = new QVBoxLayout(widget2);
+        layoutWidget2 = new QWidget(groupBox);
+        layoutWidget2->setObjectName(QString::fromUtf8("layoutWidget2"));
+        layoutWidget2->setGeometry(QRect(150, 90, 95, 101));
+        verticalLayout_3 = new QVBoxLayout(layoutWidget2);
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
-        login = new QPushButton(widget2);
+        login = new QPushButton(layoutWidget2);
         login->setObjectName(QString::fromUtf8("login"));
 
         verticalLayout_3->addWidget(login);
@@ -145,28 +144,25 @@ public:
 
         verticalLayout_3->addItem(verticalSpacer_2);
 
-        signup = new QPushButton(widget2);
+        signup = new QPushButton(layoutWidget2);
         signup->setObjectName(QString::fromUtf8("signup"));
 
         verticalLayout_3->addWidget(signup);
 
-        label_5 = new QLabel(frame_4);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(40, 300, 261, 71));
-        widget3 = new QWidget(centralwidget);
-        widget3->setObjectName(QString::fromUtf8("widget3"));
-        widget3->setGeometry(QRect(20, 10, 29, 2));
-        horizontalLayout = new QHBoxLayout(widget3);
+        layoutWidget3 = new QWidget(centralwidget);
+        layoutWidget3->setObjectName(QString::fromUtf8("layoutWidget3"));
+        layoutWidget3->setGeometry(QRect(20, 10, 29, 2));
+        horizontalLayout = new QHBoxLayout(layoutWidget3);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        frame = new QFrame(widget3);
+        frame = new QFrame(layoutWidget3);
         frame->setObjectName(QString::fromUtf8("frame"));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
 
         horizontalLayout->addWidget(frame);
 
-        frame_2 = new QFrame(widget3);
+        frame_2 = new QFrame(layoutWidget3);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
@@ -174,10 +170,6 @@ public:
         horizontalLayout->addWidget(frame_2);
 
         MainWindow->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(MainWindow);
-        menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 26));
-        MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
@@ -189,16 +181,22 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Welcome", nullptr));
         image->setText(QCoreApplication::translate("MainWindow", "image", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "                                     WELCOME", nullptr));
+        textBrowser->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\" bgcolor=\"#2a9d8f\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600; color:#ffffff;\"> SMART HEALTH CONSULTANT </span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600; color:#ffffff;\">AND </span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt; font-weight:600; color:#ff"
+                        "ffff;\">MANAGEMENT SYSTEM</span></p></body></html>", nullptr));
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "Sign In", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "New User?", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Email", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "password", nullptr));
         login->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
         signup->setText(QCoreApplication::translate("MainWindow", "Signup", nullptr));
-        label_5->setText(QCoreApplication::translate("MainWindow", "status", nullptr));
     } // retranslateUi
 
 };

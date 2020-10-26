@@ -25,8 +25,8 @@ void Update::on_show_clicked()
     QString allergies;
 
     QSqlDatabase mdb=QSqlDatabase::addDatabase("QSQLITE");
-          // mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
-   mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+          mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+   //mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
            if(mdb.open())
            {
                QSqlQuery query;
@@ -42,7 +42,7 @@ void Update::on_show_clicked()
                        allergies= query.value(12).toString();
                }
 
-              // ui->height->setText(height);
+               ui->height->setText(height);
                ui->weight->setText(weight);
                ui->glucose->setText(glucose);
                ui->bp->setText(bp);
@@ -50,7 +50,7 @@ void Update::on_show_clicked()
                ui->medical_history->setText(medical_history);
                ui->allergies->setText(allergies);
 
-              ui->height->setPlaceholderText(height);
+             // ui->height->setPlaceholderText(height);
 //               ui->weight->setPlaceholderText(weight);
 //               ui->glucose->setPlaceholderText(glucose);
 //               ui->bp->setPlaceholderText(bp);
@@ -69,7 +69,8 @@ void Update::on_show_clicked()
 
 void Update::on_Updaterec_clicked()
     {
-        QString username ="abc";
+        QString username;
+        username=ui->username->text();
         QString height ;
         QString weight ;
         QString glucose;
@@ -166,6 +167,7 @@ void Update::on_Updaterec_clicked()
                               }
 
                }
+               hide();
 }
 
 

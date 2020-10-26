@@ -1,5 +1,6 @@
 #include "symptom.h"
 #include "ui_symptom.h"
+# include <QMessageBox>
 
 Symptom::Symptom(QWidget *parent) :
     QDialog(parent),
@@ -19,6 +20,7 @@ void Symptom::on_symptomcheck_clicked()
 
  if(ui->checkBox->isChecked()&&ui->checkBox_2->isChecked()&&ui->checkBox_3->isChecked()&&ui->checkBox_4->isChecked()&&ui->checkBox_5->isChecked()&&ui->checkBox_6->isChecked())
   {
+
    ui -> txt -> setText("This may be TYPHOID,\n We suggest you to VISIT DOCTOR");
    }
 else if(ui->checkBox->isChecked()&&ui->checkBox_4->isChecked()&&ui->checkBox_7->isChecked())
@@ -44,7 +46,11 @@ else if(ui->checkBox->isChecked()&&ui->checkBox_4->isChecked()&&ui->checkBox_7->
 
 else
 {
-    ui -> txt -> setText("This may be something SERIOUS,\n We suggest you to visit DOCTOR");
+    ui -> txt -> setText("\n We suggest you to visit DOCTOR");
+    QMessageBox::information(this,"Information","This could be something serious we suggest you to connect to a doctor through our Health Assistant");
 
+     dialog1 = new ChatDialog (this);
+    //ChatDialog *dialog1;
+     dialog1->show();
 }
 }
