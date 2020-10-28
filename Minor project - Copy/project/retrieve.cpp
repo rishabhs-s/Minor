@@ -23,14 +23,16 @@ void Retrieve::on_Retrieverec_clicked()
     QString pulse;
     QString medical_history;
     QString allergies;
+    QString password=ui->password->text();
+
 
     QSqlDatabase mdb=QSqlDatabase::addDatabase("QSQLITE");
-     mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
-    //mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+    // mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+    mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
            if(mdb.open())
            {
                QSqlQuery query;
-               query.exec("SELECT * FROM records where username='"+username+"'");
+               if(query.exec("select * from records where username ='"+username+"' and password ='"+password+"'"))
                while (query.next()) {
                        height= query.value(6).toString();
                        weight= query.value(7).toString();
@@ -39,6 +41,7 @@ void Retrieve::on_Retrieverec_clicked()
                        pulse= query.value(10).toString();
                        medical_history= query.value(11).toString();
                        allergies= query.value(12).toString();
+                       password=query.value(12).toString();
 
 
 

@@ -42,6 +42,8 @@ public:
     QLineEdit *height;
     QLineEdit *username;
     QLabel *label_8;
+    QLineEdit *password;
+    QLabel *label_9;
 
     void setupUi(QDialog *Update)
     {
@@ -50,7 +52,7 @@ public:
         Update->resize(1142, 749);
         groupBox = new QGroupBox(Update);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(130, 80, 861, 511));
+        groupBox->setGeometry(QRect(130, 70, 861, 511));
         Updaterec = new QPushButton(groupBox);
         Updaterec->setObjectName(QString::fromUtf8("Updaterec"));
         Updaterec->setGeometry(QRect(390, 460, 93, 28));
@@ -98,7 +100,7 @@ public:
         allergies->setGeometry(QRect(570, 10, 271, 161));
         show = new QPushButton(groupBox);
         show->setObjectName(QString::fromUtf8("show"));
-        show->setGeometry(QRect(450, 10, 93, 28));
+        show->setGeometry(QRect(732, 10, 91, 31));
         height = new QLineEdit(groupBox);
         height->setObjectName(QString::fromUtf8("height"));
         height->setGeometry(QRect(320, 60, 113, 22));
@@ -108,6 +110,13 @@ public:
         label_8 = new QLabel(groupBox);
         label_8->setObjectName(QString::fromUtf8("label_8"));
         label_8->setGeometry(QRect(150, 10, 71, 21));
+        password = new QLineEdit(groupBox);
+        password->setObjectName(QString::fromUtf8("password"));
+        password->setGeometry(QRect(580, 10, 113, 22));
+        password->setEchoMode(QLineEdit::Password);
+        label_9 = new QLabel(groupBox);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setGeometry(QRect(490, 10, 55, 16));
 
         retranslateUi(Update);
 
@@ -128,7 +137,10 @@ public:
         label_6->setText(QCoreApplication::translate("Update", "Medical History", nullptr));
         label_7->setText(QCoreApplication::translate("Update", "Allergies", nullptr));
         show->setText(QCoreApplication::translate("Update", "show", nullptr));
-        label_8->setText(QCoreApplication::translate("Update", "username", nullptr));
+        username->setPlaceholderText(QCoreApplication::translate("Update", "Enter username", nullptr));
+        label_8->setText(QCoreApplication::translate("Update", "Username", nullptr));
+        password->setPlaceholderText(QCoreApplication::translate("Update", "Enter Password", nullptr));
+        label_9->setText(QCoreApplication::translate("Update", "Password", nullptr));
     } // retranslateUi
 
 };

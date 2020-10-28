@@ -23,14 +23,14 @@ void Update::on_show_clicked()
     QString pulse;
     QString medical_history;
     QString allergies;
-
+    QString password=ui->password->text();
     QSqlDatabase mdb=QSqlDatabase::addDatabase("QSQLITE");
-          mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
-   //mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+  //        mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+  mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
            if(mdb.open())
            {
                QSqlQuery query;
-               query.exec("SELECT * FROM records where username='"+username+"'");
+               if(query.exec("select * from records where username ='"+username+"' and password ='"+password+"'"))
                while (query.next())
                {
                        height= query.value(6).toString();

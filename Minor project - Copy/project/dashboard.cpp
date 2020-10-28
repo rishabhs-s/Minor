@@ -10,6 +10,8 @@ Dashboard::Dashboard(QWidget *parent) :
 
 {
     ui->setupUi(this);
+    QPixmap pix( "E:/Minor project/Minor/Minor project - Copy/project/MinorLogo.jpg");
+    ui->image->setPixmap(pix);
 
 }
 
