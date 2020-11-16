@@ -25,8 +25,10 @@ void MainWindow::on_login_clicked()
     //"F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite"
     db.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
     QString email=ui ->email->text();
-    QString password=ui ->password->text();
-
+    QString pswd=ui->password->text();
+    QByteArray pass = pswd.toUtf8() ;
+    QString password= QString(QCryptographicHash::hash((pass),QCryptographicHash::Md5).toHex());
+    qDebug()<<password;
 
 
     db.open();

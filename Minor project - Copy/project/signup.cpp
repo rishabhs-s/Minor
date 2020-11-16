@@ -2,6 +2,7 @@
 #include "ui_signup.h"
 #include "medicalform.h"
 #include "mainwindow.h"
+#include <QCryptographicHash>
 Signup::Signup(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Signup)
@@ -28,12 +29,17 @@ void Signup::on_signupadd_clicked()
            QString first=ui->first->text();
            QString last=ui->last->text();
            QString email=ui->email->text();
-           QString password=ui->password->text();
+           QString pswd=ui->password->text();
+           QByteArray pass = pswd.toUtf8() ;
+           QString password= QString(QCryptographicHash::hash((pass),QCryptographicHash::Md5).toHex());
+           qDebug()<<password;
            QString age=ui->age->text();
-           QString username=ui->username->text();
+           QString username=ui->username->text();     
+
 
            query.prepare("INSERT INTO records(first,last,email,password,age,username)"
                          "VALUES(:first,:last,:email,:password,:age,:username)" );
+
 
 
            query.bindValue(":first",first);

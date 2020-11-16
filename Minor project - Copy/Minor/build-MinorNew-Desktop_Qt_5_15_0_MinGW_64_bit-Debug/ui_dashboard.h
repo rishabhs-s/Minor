@@ -94,9 +94,9 @@ public:
 "<p align=\"center\" style=\"-qt"
                         "-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt; font-weight:600; color:#9e2a2b; vertical-align:sub;\"><br /></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt; font-weight:600; color:#9e2a2b; vertical-align:sub;\"><br /></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; font-weight:600; color:#9e2a2b; vertical-align:sub;\">Hello..!</span></p>\n"
-"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:600; color:#9e2a2b; vertical-align:sub;\">Health Manager is all set to assist you. Lets get started by viewing your medical  records a"
-                        "nd  give them an update if required.Also help yourselves to find a professional help from our medical team.</span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; font-weight:600; color:#9e2a2b; vertical-align:sub;\">Hello..!!</span></p>\n"
+"<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:600; color:#9e2a2b; vertical-align:sub;\">Health Manager is all set to assist you. Lets get started by viewing your medical  records "
+                        "and  give them an update if required.Also help yourselves to find a professional help from our medical team.</span></p>\n"
 "<p align=\"center\" style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; font-weight:600; font-style:italic; color:#9e2a2b; vertical-align:sub;\">&quot;STAY HEALTHY&quot;</span></p></body></html>", nullptr));
         update->setText(QCoreApplication::translate("Dashboard", "Update Records", nullptr));
         view->setText(QCoreApplication::translate("Dashboard", "View Records", nullptr));

@@ -95,8 +95,6 @@ void ChatDialog::showInformation()
 {
     if (listWidget->count() == 1) {
         QMessageBox::information(this, tr("Chat"),
-                                 tr("Launch several instances of this "
-                                    "program on your local network and "
-                                    "start chatting!"));
+                                 tr("Connecting to doctor"));
     }
 }

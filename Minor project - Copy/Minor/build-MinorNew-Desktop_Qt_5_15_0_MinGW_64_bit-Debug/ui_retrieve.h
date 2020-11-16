@@ -128,6 +128,7 @@ public:
 
         password = new QLineEdit(groupBox);
         password->setObjectName(QString::fromUtf8("password"));
+        password->setEchoMode(QLineEdit::Password);
 
         gridLayout->addWidget(password, 3, 1, 1, 1);
 

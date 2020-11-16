@@ -80,7 +80,7 @@ void Update::on_Updaterec_clicked()
         QString allergies;
 
         QSqlDatabase mdb=QSqlDatabase::addDatabase("QSQLITE");
-               mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
+               mdb.setDatabaseName("E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
                if(mdb.open())
                {
                    QSqlQuery query;
@@ -161,13 +161,14 @@ void Update::on_Updaterec_clicked()
                                   QMessageBox::information(this,"Successfull","Data inserted successfully");
                               }
                               else{
-                                   //QMessageBox::warning(this,"Unsuccessfull",mdb.lastError());
-                       QMessageBox::critical(0,"Database Error",mdb.lastError().text());
+                                   QMessageBox::information(this,"Unsuccessfull",mdb.lastError().text());
+                      // QMessageBox::critical(0,"Database Error",mdb.lastError().text());
                        qDebug()<<mdb.lastError().text();
                               }
 
                }
                hide();
+
 }
 
 
