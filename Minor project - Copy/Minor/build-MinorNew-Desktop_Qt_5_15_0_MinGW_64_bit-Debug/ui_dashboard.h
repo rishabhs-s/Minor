@@ -30,6 +30,7 @@ public:
     QPushButton *view;
     QPushButton *symptom;
     QPushButton *assistant;
+    QPushButton *billbtn;
     QLabel *image;
 
     void setupUi(QDialog *Dashboard)
@@ -67,6 +68,11 @@ public:
 
         verticalLayout->addWidget(assistant);
 
+        billbtn = new QPushButton(verticalLayoutWidget);
+        billbtn->setObjectName(QString::fromUtf8("billbtn"));
+
+        verticalLayout->addWidget(billbtn);
+
         image = new QLabel(Dashboard);
         image->setObjectName(QString::fromUtf8("image"));
         image->setGeometry(QRect(200, 120, 341, 231));
@@ -102,6 +108,7 @@ public:
         view->setText(QCoreApplication::translate("Dashboard", "View Records", nullptr));
         symptom->setText(QCoreApplication::translate("Dashboard", "Symptom Check", nullptr));
         assistant->setText(QCoreApplication::translate("Dashboard", "Assistant", nullptr));
+        billbtn->setText(QCoreApplication::translate("Dashboard", "Generate Bill", nullptr));
         image->setText(QCoreApplication::translate("Dashboard", "TextLabel", nullptr));
     } // retranslateUi
 

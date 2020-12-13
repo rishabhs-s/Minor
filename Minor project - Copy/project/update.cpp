@@ -23,7 +23,9 @@ void Update::on_show_clicked()
     QString pulse;
     QString medical_history;
     QString allergies;
-    QString password=ui->password->text();
+    QString pswd=ui->password->text();
+    QByteArray pass = pswd.toUtf8() ;
+    QString password= QString(QCryptographicHash::hash((pass),QCryptographicHash::Md5).toHex());
     QSqlDatabase mdb=QSqlDatabase::addDatabase("QSQLITE");
   //        mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
   mdb.setDatabaseName( "E:/Minor project/Minor/Minor project - Copy/Minor/project/mdb.sqlite");

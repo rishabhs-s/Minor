@@ -3,7 +3,9 @@
 #include "update.h"
 #include "retrieve.h"
 #include "symptom.h"
+#include"bill.h"
 #include "chatdialog.h"
+
 
 
 #include <QDialog>
@@ -29,6 +31,9 @@ private slots:
 
     void on_assistant_clicked();
 
+
+    void on_billbtn_clicked();
+
 private:
     Ui::Dashboard *ui;
 
@@ -36,6 +41,7 @@ private:
     Retrieve *retrieverec;
     Symptom *symptom;
     ChatDialog *dialog;
+    Bill *billing;
 };
 
 #endif // DASHBOARD_H

@@ -23,8 +23,9 @@ void Retrieve::on_Retrieverec_clicked()
     QString pulse;
     QString medical_history;
     QString allergies;
-    QString password=ui->password->text();
-
+    QString pswd=ui->password->text();
+    QByteArray pass = pswd.toUtf8() ;
+    QString password= QString(QCryptographicHash::hash((pass),QCryptographicHash::Md5).toHex());
 
     QSqlDatabase mdb=QSqlDatabase::addDatabase("QSQLITE");
     // mdb.setDatabaseName("F:/Minor/Minor project - Copy/Minor/project/mdb.sqlite");
@@ -41,7 +42,6 @@ void Retrieve::on_Retrieverec_clicked()
                        pulse= query.value(10).toString();
                        medical_history= query.value(11).toString();
                        allergies= query.value(12).toString();
-                       password=query.value(12).toString();
 
 
 

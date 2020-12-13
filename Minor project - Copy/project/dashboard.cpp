@@ -49,3 +49,10 @@ void Dashboard::on_assistant_clicked()
 //    ChatDialog dialog; //dashboard on assitant click
     dialog->show(); //on assitant click
 }
+
+
+void Dashboard::on_billbtn_clicked()
+{
+    billing=new Bill(this);
+    billing->show();
+}

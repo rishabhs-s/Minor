@@ -1,3 +1,4 @@
+release/bill.o
 release/chatdialog.o
 release/client.o
 release/connection.o
@@ -11,6 +12,7 @@ release/server.o
 release/signup.o
 release/symptom.o
 release/update.o
+release/moc_bill.o
 release/moc_chatdialog.o
 release/moc_client.o
 release/moc_connection.o

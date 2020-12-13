@@ -9,6 +9,8 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+#    bill.cpp \
+    bill.cpp \
     chatdialog.cpp \
     client.cpp \
     connection.cpp \
@@ -24,6 +26,8 @@ SOURCES += \
     update.cpp
 
 HEADERS += \
+#    bill.h \
+    bill.h \
     chatdialog.h \
     client.h \
     connection.h \
@@ -38,6 +42,8 @@ HEADERS += \
     update.h
 
 FORMS += \
+#    bill.ui \
+    bill.ui \
     chatdialog.ui \
     dashboard.ui \
     mainwindow.ui \
